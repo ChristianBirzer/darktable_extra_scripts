@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: darktable_scrip_HeliconFocus\n"
+"POT-Creation-Date: 2022-03-26 10:45+0100\n"
+"PO-Revision-Date: 2022-03-26 10:47+0100\n"
+"Last-Translator: \n"
+"Language-Team: Christian Birzer\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ../../../contrib\n"
+"X-Poedit-SearchPath-0: HeliconFocus.lua\n"
+
+#: HeliconFocus.lua:149
+msgid "importing file "
+msgstr ""
+
+#: HeliconFocus.lua:229
+msgid "exporting images..."
+msgstr ""
+
+#: HeliconFocus.lua:233
+msgid "not enough images selected, select at least 2 images to stack"
+msgstr ""
+
+#: HeliconFocus.lua:245
+msgid "error while writing list of input files"
+msgstr ""
+
+#: HeliconFocus.lua:271
+msgid "exporting images canceled!"
+msgstr ""
+
+#: HeliconFocus.lua:307
+msgid "could not start HeliconFocus application"
+msgstr ""
+
+#: HeliconFocus.lua:314
+msgid "no image to import"
+msgstr ""
+
+#: HeliconFocus.lua:353
+msgid "use original RAW"
+msgstr "Original RAW benutzen"
+
+#: HeliconFocus.lua:355
+msgid "stack original RAW images instead of exported TIFF"
+msgstr "Die original RAW Dateien anstatt der exportierten TIFF Dateien stacken"
+
+#: HeliconFocus.lua:365
+msgid "group"
+msgstr "Gruppieren"
+
+#: HeliconFocus.lua:367
+msgid "group selected source images and imported result image(s) together"
+msgstr ""
+"Die ausgewählten Quellbilder und die importierten Ausgabebilder gruppieren"
+
+#: HeliconFocus.lua:377
+msgid "copy tags"
+msgstr ""
+
+#: HeliconFocus.lua:379
+msgid "copy all tags from all source images to the imported result image(s)"
+msgstr ""
+
+#: HeliconFocus.lua:387
+msgid "settings"
+msgstr ""
+
+#: HeliconFocus.lua:391
+msgid "import options"
+msgstr ""
+
+#: HeliconFocus.lua:395
+msgid "new tags"
+msgstr ""
+
+#: HeliconFocus.lua:401
+msgid ""
+"Additional tags to be added on import. Seperate with commas, all spaces will "
+"be removed"
+msgstr ""
+
+#: HeliconFocus.lua:402
+msgid "Enter tags, seperated by commas"
+msgstr ""
+
+#: HeliconFocus.lua:423
+msgid "stack"
+msgstr "Stacken"
+
+#: HeliconFocus.lua:424
+msgid "run Helicon Focus to stack selected images"
+msgstr ""
+
+#: HeliconFocus.lua:432
+msgid "Helicon Focus executable"
+msgstr ""
+
+#: HeliconFocus.lua:433
+msgid "Select the executable HeliconFocus.exe"
+msgstr ""
+
+#: HeliconFocus.lua:444
+msgid "Helicon Focus"
+msgstr ""
