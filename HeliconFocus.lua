@@ -78,11 +78,20 @@ local mod = 'module_HeliconFocus'
 local os_path_seperator = '/'
 if dt.configuration.running_os == 'windows' then os_path_seperator = '\\' end
 
+-- find locale directory:
+local scriptfile = debug.getinfo( 1, "S" )
+local localedir = dt.configuration.config_dir..'/lua/locale/'
+if scriptfile ~= nil and scriptfile.source ~= nil then
+  local path = scriptfile.source:match( "[^@].*[/\\]" )
+  localedir = path..os_path_seperator..'locale'
+end
+dt.print_log( "localedir: "..localedir )
+
 -- Tell gettext where to find the .mo file translating messages for a particular domain
 local gettext = dt.gettext
-gettext.bindtextdomain('HeliconFocus', dt.configuration.config_dir..'/lua/locale/')
+gettext.bindtextdomain( 'HeliconFocus', localedir )
 local function _(msgid)
-    return gettext.dgettext('HeliconFocus', msgid)
+    return gettext.dgettext( 'HeliconFocus', msgid )
 end
 
 -- declare a local namespace and a couple of variables we'll need to install the module
