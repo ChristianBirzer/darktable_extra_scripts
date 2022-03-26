@@ -2,12 +2,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: darktable_scrip_HeliconFocus\n"
 "POT-Creation-Date: 2022-03-26 10:45+0100\n"
-"PO-Revision-Date: 2022-03-26 10:47+0100\n"
+"PO-Revision-Date: 2022-03-26 13:03+0100\n"
 "Last-Translator: \n"
 "Language-Team: Christian Birzer\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=charset\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.0.1\n"
@@ -56,8 +56,7 @@ msgstr "Gruppieren"
 
 #: HeliconFocus.lua:367
 msgid "group selected source images and imported result image(s) together"
-msgstr ""
-"Die ausgew√§hlten Quellbilder und die importierten Ausgabebilder gruppieren"
+msgstr "Die ausgew‰hlten Quellbilder und die importierten Ausgabebilder gruppieren"
 
 #: HeliconFocus.lua:377
 msgid "copy tags"
@@ -80,9 +79,7 @@ msgid "new tags"
 msgstr ""
 
 #: HeliconFocus.lua:401
-msgid ""
-"Additional tags to be added on import. Seperate with commas, all spaces will "
-"be removed"
+msgid "Additional tags to be added on import. Seperate with commas, all spaces will be removed"
 msgstr ""
 
 #: HeliconFocus.lua:402
@@ -108,3 +105,4 @@ msgstr ""
 #: HeliconFocus.lua:444
 msgid "Helicon Focus"
 msgstr ""
+
