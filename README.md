@@ -3,7 +3,7 @@ Additional lua scripts for darktable that won't be included in the official repo
 
 ## Helicon Focus
 
-This script adds a new panel to the lighttable that lets you export a couple of selected images an pass them to the (commercial) focus stacking application Helicon Focus.
+This script adds a new panel to the lighttable that lets you export a couple of selected images and pass them to the (commercial) focus stacking application Helicon Focus.
 
 The resulting image(s) are then imported into darktable again.
 
