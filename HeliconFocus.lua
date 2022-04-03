@@ -354,7 +354,7 @@ local function start_stacking()
   stackedimages[ 1 ]:make_group_leader()
 
   -- cleanup:
-  -- df.rmdir( tempdirname )
+  df.rmdir( tempdirname )
 
 end
 
