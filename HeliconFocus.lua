@@ -205,26 +205,21 @@ local function add_additional_tags( image )
 end
 
 local function save_preferences()
-  dt.preferences.write(mod, 'group', 'bool', GUI.optionwidgets.group.value )
-  dt.preferences.write(mod, 'use_original', 'bool', GUI.optionwidgets.use_original.value )
-  dt.preferences.write(mod, 'copy_tags', 'bool', GUI.optionwidgets.copy_tags.value )
-  dt.preferences.write(mod, 'add_tags', 'string', GUI.optionwidgets.add_tags.text )
+  dt.preferences.write( mod, 'group', 'bool', GUI.optionwidgets.group.value )
+  dt.preferences.write( mod, 'use_original', 'bool', GUI.optionwidgets.use_original.value )
+  dt.preferences.write( mod, 'copy_tags', 'bool', GUI.optionwidgets.copy_tags.value )
+  dt.preferences.write( mod, 'add_tags', 'string', GUI.optionwidgets.add_tags.text )
 end
 
 local function load_preferences()
-  GUI.optionwidgets.group.value = dt.preferences.read(mod, 'group', 'bool' )
-  GUI.optionwidgets.use_original.value = dt.preferences.read(mod, 'use_original', 'bool' )
-  GUI.optionwidgets.copy_tags.value = dt.preferences.read(mod, 'copy_tags', 'bool' )
-  -- temp = dt.preferences.read(mod, 'add_tags', 'string')
-  -- if temp == '' then
-  --   temp = nil
-  -- end
-  GUI.optionwidgets.add_tags.text = dt.preferences.read(mod, 'add_tags', 'string') -- temp
-
+  GUI.optionwidgets.group.value = dt.preferences.read( mod, 'group', 'bool' )
+  GUI.optionwidgets.use_original.value = dt.preferences.read( mod, 'use_original', 'bool' )
+  GUI.optionwidgets.copy_tags.value = dt.preferences.read( mod, 'copy_tags', 'bool' )
+  GUI.optionwidgets.add_tags.text = dt.preferences.read( mod, 'add_tags', 'string')
 end
 
 -- stop running export
-local function stop_job(job)
+local function stop_job( job )
   job.valid = false
 end
 
