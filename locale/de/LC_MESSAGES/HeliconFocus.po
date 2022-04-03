@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: darktable_scrip_HeliconFocus\n"
 "POT-Creation-Date: 2022-03-26 10:45+0100\n"
-"PO-Revision-Date: 2022-03-27 19:11+0200\n"
+"PO-Revision-Date: 2022-04-03 17:16+0200\n"
 "Last-Translator: \n"
 "Language-Team: Christian Birzer\n"
 "Language: de\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: HeliconFocus.lua:149
 msgid "importing file "
-msgstr "Importiere Bild"
+msgstr "Importiere Bild "
 
 #: HeliconFocus.lua:229
 msgid "exporting images..."
