@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-04-17 16:25+0200\n"
+"PO-Revision-Date: 2022-04-17 16:26+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-SearchPath-0: ExportToPublish.lua\n"
+
+#: ExportToPublish.lua:253
+msgid ""
+"A preset with this name already exists. Please use an other name or delete "
+"the old preset first"
+msgstr ""
+"Eine Voreinstellung mit diesem Namen existiert bereits. Bitte einen "
+"anderen Namen verwenden oder die vorherige zuerst löschen"
+
+#: ExportToPublish.lua:289
+msgid "presets"
+msgstr "Voreinstellungen"
+
+#: ExportToPublish.lua:293
+msgid "preset"
+msgstr "Voreinstellung"
+
+#: ExportToPublish.lua:294
+msgid "select the preset to restore"
+msgstr "Die Voreinstellung zum Wiederherstellen wählen"
+
+#: ExportToPublish.lua:299
+msgid "update"
+msgstr "Aktualisieren"
+
+#: ExportToPublish.lua:300
+msgid "update the selected preset with the current settings"
+msgstr ""
+"Aktualisiert die gewählte Voreinstellung mit den aktuellen Einstellungen"
+
+#: ExportToPublish.lua:305
+msgid "delete"
+msgstr "Löschen"
+
+#: ExportToPublish.lua:306
+msgid "delete the selected preset"
+msgstr "Löscht die gewählte Voreinstellung"
+
+#: ExportToPublish.lua:317
+msgid "preset name"
+msgstr "Name der Voreinstellung"
+
+#: ExportToPublish.lua:318
+msgid "enter a name for a new preset"
+msgstr "Einen Namen für eine neue Voreinstellung eingeben"
+
+#: ExportToPublish.lua:324
+msgid "create"
+msgstr "Erstellen"
+
+#: ExportToPublish.lua:325
+msgid "create a new preset"
+msgstr "Erstellt eine neue Voreinstellung"
+
+#: ExportToPublish.lua:336
+msgid "publish target"
+msgstr "Veröffentlichungsziel"
+
+#: ExportToPublish.lua:340
+msgid "target path"
+msgstr "Zielverzeichnis"
+
+#: ExportToPublish.lua:344
+msgid "browse"
+msgstr "Verzeichnis wählen"
+
+#: ExportToPublish.lua:345
+msgid "browse for the target directory"
+msgstr "Das Zielverzeichnis wählen"
+
+#: ExportToPublish.lua:351
+msgid "tags"
+msgstr "Stichwörter"
+
+#: ExportToPublish.lua:355
+msgid "tags to add after export, multiple tags separated by comma"
+msgstr ""
+"Stichwörter die nach dem Export hinzugefügt werden sollen, mehrere durch "
+"Komma getrennt"
+
+#: ExportToPublish.lua:362
+msgid "open directory after export"
+msgstr "Zielverzeichnis nach Export öffnen"
+
+#: ExportToPublish.lua:364
+msgid "open target directory in file manager after export"
+msgstr "Öffnet das Zielverzeichnis im Dateimanager nach dem Export"
+
+#: ExportToPublish.lua:455
+msgid "error moving image to target folder"
+msgstr "Fehler beim Verschieben des Bildes in das Zielverzeichnis"
+
+#: ExportToPublish.lua:488
+msgid "export to publish"
+msgstr "Zum Veröffentlichen exportieren"
