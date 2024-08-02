@@ -89,6 +89,7 @@ local gui = {
   section_publish = {},
   label_target_path = {},
   filechooser_target_path = {},
+  check_overwrite = {},
   label_tag = {},
   entry_tag = {},
   check_open_path = {},
@@ -233,6 +234,7 @@ local function preset_restore( combobox )
     gui.filechooser_target_path.value = preset[ 'p' ]
     gui.entry_tag.text                = preset[ 't' ]
     gui.check_open_path.value         = preset[ 'o' ] == 'true'
+    gui.check_overwrite.value         = preset[ 'v' ] == 'true'
     dt.preferences.write( mod, "active_preset", "string", preset[ 'n' ] )
   end
 end
@@ -259,12 +261,17 @@ local function preset_create()
   if gui.check_open_path.value == true then
     preset_opendir = "true"
   end
+  local preset_overwrite = false
+  if gui.check_overwrite.value == true then
+    local preset_overwrite = 'true'
+  end
   print( "create preset " .. preset_name )
 
   local preset = {}
   preset[ 'n' ] = preset_name
   preset[ 'p' ] = preset_path
   preset[ 'o' ] = preset_opendir
+  preset[ 'v' ] = preset_overwrite
   preset[ 't' ] = preset_tags
   table.insert( presets, preset )
 
@@ -347,6 +354,16 @@ gui.filechooser_target_path = dt.new_widget( "file_chooser_button" ) {
   changed_callback = set_target_directory
 }
 
+gui.check_overwrite = dt.new_widget("check_button"){
+  label = _( "overwrite export file"),
+  value = false,
+  tooltip = _("overwrite expported file if it already exists"),
+  reset_callback = function ( self )
+    self.value = false
+  end
+
+}
+
 gui.label_tag = dt.new_widget( "label" ) {
   label = _( "tags" ),
 }
@@ -378,6 +395,7 @@ local gui_widgets = dt.new_widget( "box" ) {
   gui.filechooser_target_path,
   gui.label_tag,
   gui.entry_tag,
+  gui.check_overwrite,
   gui.check_open_path,
 }
 
