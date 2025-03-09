@@ -43,6 +43,8 @@ USAGE
 WARNING
 This script was only tested on Windows
 
+CHANGES
+2025-03-09: Changed creation of temp directory on windows since os.tmpname() now works as expected.
 ]]
 
 local dt = require 'darktable'
@@ -101,9 +103,6 @@ mE.module_installed = false  -- keep track of whether the module is module_insta
 
 local function create_temp_directory()
   local temp_directory_name = os.tmpname()
-  if dt.configuration.running_os == "windows" then
-      temp_directory_name = dt.configuration.tmp_dir .. temp_directory_name -- windows os.tmpname() defaults to root directory
-  end
   temp_directory_name = temp_directory_name.."darktable"
 
   df.mkdir( temp_directory_name )
