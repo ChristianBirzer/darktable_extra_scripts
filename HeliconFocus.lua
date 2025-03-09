@@ -41,7 +41,7 @@ USAGE
 * More than one image (e.g. different stacking settings) can be saved and all of them will be imported after closing Helicon Focus
 
 WARNING
-This script was only tested on Windows
+This script was only tested on Windows and MacOS
 
 CHANGES
 2025-03-09: Changed creation of temp directory on windows since os.tmpname() now works as expected.
